@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		A081F33428BDD9890095B407 /* dscloudpinotp.h in Headers */ = {isa = PBXBuildFile; fileRef = A081F33328BDD9890095B407 /* dscloudpinotp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A081F33B28BDD9D30095B407 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A081F33A28BDD9D30095B407 /* ContentView.swift */; };
+		A081F33D28BDD9E10095B407 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A081F33C28BDD9E10095B407 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A081F33028BDD9890095B407 /* dscloudpinotp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = dscloudpinotp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A081F33328BDD9890095B407 /* dscloudpinotp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dscloudpinotp.h; sourceTree = "<group>"; };
+		A081F33A28BDD9D30095B407 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A081F33C28BDD9E10095B407 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,8 @@
 			isa = PBXGroup;
 			children = (
 				A081F33328BDD9890095B407 /* dscloudpinotp.h */,
+				A081F33C28BDD9E10095B407 /* CustomTextField.swift */,
+				A081F33A28BDD9D30095B407 /* ContentView.swift */,
 			);
 			path = dscloudpinotp;
 			sourceTree = "<group>";
@@ -93,6 +99,7 @@
 				TargetAttributes = {
 					A081F32F28BDD9890095B407 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -129,6 +136,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A081F33D28BDD9E10095B407 /* CustomTextField.swift in Sources */,
+				A081F33B28BDD9D30095B407 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +267,7 @@
 		A081F33828BDD9890095B407 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -278,6 +288,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +297,7 @@
 		A081F33928BDD9890095B407 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
